@@ -6,7 +6,8 @@
 }
 body{
     overflow: auto;
-    background: linear-gradient(90deg, #8ce482 0%, #8ce482 30%, #03a9f5 30%, #03a9f5 100%);
+    /*background: linear-gradient(90deg, #8ce482 30%, #03a9f5 70%);*/
+    background-color: #999;
 }
 .container{
     margin-top: 10%;
@@ -82,6 +83,7 @@ nav{
 }
 .lefti{
     padding: 150px 0px;
+    margin-top: -50px;
 }
 .ibox p{
     color: #012739;
@@ -100,6 +102,7 @@ nav{
     margin-top: 30px;
 }
 .ibox .righti img{
+    margin-left: 170px;
     width: 450px;
     margin-left: 30%;
 }
@@ -123,6 +126,7 @@ nav{
 .isci{
     display: flex;
     margin-top: 50px;
+    margin-left: -15px;
 }
 .isci li{
     list-style: none;
@@ -341,259 +345,4 @@ nav{
 }
 .crec h5{
     margin-bottom: 10px;
-}
-@media screen and (max-width:768px){
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: rgb(19, 150, 124);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        z-index: 1;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .burger{
-        display: block;
-    }
-    .container{
-        margin-top: 70px;
-    }
-    .lefti .ibtn{
-        margin-left: 35%;
-    }
-    .sml{
-        margin-left: 220px;
-    }
-    .righti{
-        margin-left: 50px;
-    }
-    .intro{
-        margin-top: 40px;
-    }
-    .procontent h2{
-        margin-left: 45px;
-    }
-    .procontent .prolist{
-        display: flex;
-        flex-direction: column;
-    }
-    .prolink{
-        margin-bottom: 50px;
-    }
-    .crec img{
-        width: 50px;
-        border-radius: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        box-shadow: 0px 5px 55px rgba(0, 0, 0, 0.5);
-    }
-    .crec .proh{
-        font-weight: bold;
-        font-size: 14px;
-    }
-    .crec h5{
-        font-size: 12px;
-    }
-    .crec p{
-        font-size: 11px;
-    }
-    .prolink div a{
-        display: flex;
-        margin-left: 30px;
-        margin-top: 20px;
-        padding-bottom: 20px;
-    }
-    .crec a ion-icon{
-        font-size: 20px;
-        margin: -3px 5px auto 5px;
-    }
-    .prolink div:hover{
-        box-shadow: 0px 5px 55px rgba(0, 0, 0, 100);
-    }
-}
-.nav-active{
-    transform: translateX(0%);
-}
-
-@keyframes navLinksFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-@media screen and (max-width:831px){
-    .container{
-        margin-top: 70px;
-        margin-left: 0px;
-    }
-    .ibox{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .lefti, .righti{
-        margin-bottom: 50px;
-    }
-    .lefti{
-        padding: 15px;
-    }
-    .intro{
-        margin-top: 35px;
-        margin-left: -50px;
-    }
-    .lefti p{
-        text-align: center;
-    }
-    .lefti .ibtn{
-        margin-left: 40%;
-    }
-    .sml{
-        margin-left: 35%;
-    }
-    .righti{
-        margin-left: 7%;
-    }
-    .righti img{
-        width: 380px;
-        height: 430px;
-    }
-}
-@media screen and (max-width:893px){
-    .container{
-        margin-top: 70px;
-    }
-    .ibox{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .lefti, .righti{
-        width: 100%;
-    }
-    .righti{
-        margin-left: 6em;
-        margin-right: auto;
-    }
-    .righti img{
-        width: 360px;
-        height: 410px;
-    }
-    .lefti{
-        margin-top: -75px;
-        text-align: center;
-    }
-    .intro .ibtn{
-        margin-left: 42%;
-        margin-top: 30px;
-    }
-    .sml{
-        margin-left: 40%;
-    }
-}
-@media screen and (max-width: 947px) {
-    .righti img{
-        width: 356px;
-        height: 447px;
-    }
-    .intro{
-        margin-top: -60px;
-    }
-    .name, .profession{
-        font-size: 20px;
-    }
-    .ibtn{
-        width: 125px;
-    }
-    .isci li{
-        font-size: 20px;
-    }
-}
-@media (max-width:991px){
-    body{
-        background: linear-gradient(90deg, #8ce482 0%, #8ce482 30%, #03a9f5 30%, #03a9f5 100%);
-        overflow: scroll;
-    }
-    .contactUs{
-        padding: 20px;
-        margin-top: 65px;
-    }
-    .box{
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "form"
-        "info"
-        "map";
-    }
-    .map{
-        min-height: 300px;
-    }
-    .formBox .row50{
-        display: flex;
-        gap: 0;
-        flex-direction: column;
-    }
-    .inputBox{
-        width: 100%;
-    }
-    .contact{
-        padding: 30px;
-    }
-    .map{
-        min-height: 300px;
-        padding: 0;
-    }
-}
-@media screen and (max-width: 1010px){
-    .container{
-        margin-top: 9em;
-    }
-    .intro {
-        margin-top: -25px;
-    }
-    .ibox .righti img{
-        width: 400px;
-        height: 500px;
-        margin-left: -25px;
-    }
-    .isci{
-        margin-top: 50px;
-    }
-}
-@media screen and (max-width:1024px){
-    .nav-links{
-        display: flex;
-        justify-content: space-around;
-        width: 60%;
-    }
-}
-@media screen and (max-width: 1100px) {
-    .ibox .righti img{
-        margin-left: -5px;
-    }
-}
-@media screen and (max-width: 1170px) {
-    .ibox .righti img{
-        width: 450px;
-        height: 560px;
-        margin-left: 85px;
-    }
-}
-@media screen and (max-width: 1340px) {
-    .ibox .righti img{
-        width: 400px;
-        height: 500px;
-    }
 }
