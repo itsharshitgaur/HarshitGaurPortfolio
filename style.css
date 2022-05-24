@@ -8,6 +8,12 @@ body{
     overflow: auto;
     background: linear-gradient(90deg, #8ce482 0%, #8ce482 30%, #03a9f5 30%, #03a9f5 100%);
 }
+.container{
+    margin-top: 10%;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -65,7 +71,71 @@ nav{
 .toggle .line3{
     transform: rotate(-45deg) translate(5px, -6px);
 }
+.ibox{
+    display: flex;
+}
+.intro{
+    margin-bottom: 25px;
+}
+.lefti, .righti{
+    width: 45%;
+}
+.lefti{
+    padding: 150px 0px;
+}
+.ibox p{
+    color: #012739;
+    margin-bottom: 10px;
+}
+.name, .profession{
+    color: #d91b57;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: cursive;
+}
 
+.lefti a{
+    text-decoration: none;
+    margin-left: 0%;
+    margin-top: 30px;
+}
+.ibox .righti img{
+    width: 450px;
+    margin-left: 30%;
+}
+.ibtn{
+    margin-top: 25px;
+    width: 130px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #ff578b;
+    text-align: center;
+    padding: 12px 5px;
+    box-shadow: 3px 3px #eea5bc;
+    color: white;
+    cursor: pointer;
+}
+.ibtn:hover{
+    color: #ef1c5f;
+    background-color: #e9acbe;
+    box-shadow: 3px 3px #ef8bab;
+}
+.isci{
+    display: flex;
+    margin-top: 50px;
+}
+.isci li{
+    list-style: none;
+    margin-right: 15px;
+    font-size: x-large;
+}
+.isci li a{
+    color: #ef1c5f;
+    font-size: 1.5em;
+}
+.isci li a:hover{
+    color: #ed6991;
+}
 .contactUs{
     position: relative;
     width: 100%;
@@ -238,7 +308,7 @@ nav{
     width: 300px;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0px 5px 55px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
 }
 .prolink div:hover{
     box-shadow: 0px 5px 55px rgba(0, 0, 0, 100);
@@ -272,22 +342,7 @@ nav{
 .crec h5{
     margin-bottom: 10px;
 }
-@media screen and (max-width:1024px){
-    body{
-        overflow: hidden;
-        background: linear-gradient(90deg, #8ce482 0%, #8ce482 30%, #03a9f5 30%, #03a9f5 100%);
-    }
-    .nav-links{
-        display: flex;
-        justify-content: space-around;
-        width: 60%;
-    }
-}
 @media screen and (max-width:768px){
-    body{
-        overflow-x: hidden;
-        background: linear-gradient(90deg, #8ce482 0%, #8ce482 30%, #03a9f5 30%, #03a9f5 100%);
-    }
     .nav-links{
         position: absolute;
         right: 0px;
@@ -307,6 +362,21 @@ nav{
     }
     .burger{
         display: block;
+    }
+    .container{
+        margin-top: 70px;
+    }
+    .lefti .ibtn{
+        margin-left: 35%;
+    }
+    .sml{
+        margin-left: 220px;
+    }
+    .righti{
+        margin-left: 50px;
+    }
+    .intro{
+        margin-top: 40px;
     }
     .procontent h2{
         margin-left: 45px;
@@ -363,6 +433,91 @@ nav{
         transform: translateX(0px);
     }
 }
+@media screen and (max-width:831px){
+    .container{
+        margin-top: 70px;
+        margin-left: 0px;
+    }
+    .ibox{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .lefti, .righti{
+        margin-bottom: 50px;
+    }
+    .lefti{
+        padding: 15px;
+    }
+    .intro{
+        margin-top: 35px;
+        margin-left: -50px;
+    }
+    .lefti p{
+        text-align: center;
+    }
+    .lefti .ibtn{
+        margin-left: 40%;
+    }
+    .sml{
+        margin-left: 35%;
+    }
+    .righti{
+        margin-left: 7%;
+    }
+    .righti img{
+        width: 380px;
+        height: 430px;
+    }
+}
+@media screen and (max-width:893px){
+    .container{
+        margin-top: 70px;
+    }
+    .ibox{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .lefti, .righti{
+        width: 100%;
+    }
+    .righti{
+        margin-left: 6em;
+        margin-right: auto;
+    }
+    .righti img{
+        width: 360px;
+        height: 410px;
+    }
+    .lefti{
+        margin-top: -75px;
+        text-align: center;
+    }
+    .intro .ibtn{
+        margin-left: 42%;
+        margin-top: 30px;
+    }
+    .sml{
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 947px) {
+    .righti img{
+        width: 356px;
+        height: 447px;
+    }
+    .intro{
+        margin-top: -60px;
+    }
+    .name, .profession{
+        font-size: 20px;
+    }
+    .ibtn{
+        width: 125px;
+    }
+    .isci li{
+        font-size: 20px;
+    }
+}
 @media (max-width:991px){
     body{
         background: linear-gradient(90deg, #8ce482 0%, #8ce482 30%, #03a9f5 30%, #03a9f5 100%);
@@ -401,4 +556,44 @@ nav{
         padding: 0;
     }
 }
-
+@media screen and (max-width: 1010px){
+    .container{
+        margin-top: 9em;
+    }
+    .intro {
+        margin-top: -25px;
+    }
+    .ibox .righti img{
+        width: 400px;
+        height: 500px;
+        margin-left: -25px;
+    }
+    .isci{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:1024px){
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .ibox .righti img{
+        margin-left: -5px;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .ibox .righti img{
+        width: 450px;
+        height: 560px;
+        margin-left: 85px;
+    }
+}
+@media screen and (max-width: 1340px) {
+    .ibox .righti img{
+        width: 400px;
+        height: 500px;
+    }
+}
