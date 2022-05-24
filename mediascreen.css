@@ -4,7 +4,7 @@
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: rgb(19, 150, 124);
+        background-color: #fef9f8;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -268,24 +268,20 @@
     .ibox .righti img{
         width: 300px;
         height: 390px;
-        margin-left: 7%;
+        margin-left: 33%;
     }
     .lefti{
         width: 100%;
     }
     .ibox .lefti .intro .ibtn{
-        margin-left: 32%;
-    }
-    .ibox .lefti .sml{
         margin-left: 30%;
     }
-}
-@media screen and (max-width:280px){
-    .ibox .righti img{
-        margin-left: 35%;
-        width: 254px;
-        height: 320px;
+    .ibox .lefti .sml{
+        margin-left: 26%;
     }
+}
+@media screen and (max-width:281px){
+    
     .name, .profession{
         font-size: 19px;
     }
@@ -297,10 +293,10 @@
     }
 }
 @media screen and (max-width:360px){
-    .ibox .righti img {
-        width: 275px;
-        height: 365px;
-        margin-left: 2%;
+    .ibox .righti img{
+        width: 230px;
+        height: 290px;
+        margin-left: 29%;
     }
     .ibox .lefti .intro .ibtn {
         margin-left: 25%;

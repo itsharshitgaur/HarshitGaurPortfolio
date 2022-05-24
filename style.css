@@ -6,8 +6,7 @@
 }
 body{
     overflow: auto;
-    /*background: linear-gradient(90deg, #8ce482 30%, #03a9f5 70%);*/
-    background-color: #999;
+    background-color: #fef9f8;
 }
 .container{
     margin-top: 10%;
@@ -20,15 +19,15 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: rgb(19, 150, 124);
+    background-color: #fef9f8;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
-    box-shadow: 0px 5px 55px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 75px rgba(0, 0, 0, 0.2);
 }
 .logo{
-    color: rgb(22, 90, 145);
+    color: #d56464;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -42,7 +41,7 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color: rgb(22, 90, 145);
+    color: #0d0d0d;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -55,7 +54,7 @@ nav{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: rgb(22, 90, 145);
+    background-color: #d56464;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -86,11 +85,11 @@ nav{
     margin-top: -50px;
 }
 .ibox p{
-    color: #012739;
+    color: #0d0d0d;
     margin-bottom: 10px;
 }
 .name, .profession{
-    color: #d91b57;
+    color: #c65f61;
     font-size: 22px;
     font-weight: bolder;
     font-family: cursive;
@@ -111,17 +110,16 @@ nav{
     width: 130px;
     height: 50px;
     border-radius: 12px;
-    background-color: #ff578b;
+    background-color: #ef9293;
     text-align: center;
-    padding: 12px 5px;
-    box-shadow: 3px 3px #eea5bc;
-    color: white;
+    padding: 14px 5px;
+    box-shadow: 3px 3px #cda3b1;
     cursor: pointer;
 }
 .ibtn:hover{
-    color: #ef1c5f;
-    background-color: #e9acbe;
-    box-shadow: 3px 3px #ef8bab;
+    color: #f5f1f2;
+    background-color: #d56464;
+    box-shadow: 3px 3px #c48081;
 }
 .isci{
     display: flex;
@@ -134,11 +132,11 @@ nav{
     font-size: x-large;
 }
 .isci li a{
-    color: #ef1c5f;
+    color: #ef9293;
     font-size: 1.5em;
 }
 .isci li a:hover{
-    color: #ed6991;
+    color: #d56464;
 }
 .contactUs{
     position: relative;
@@ -173,7 +171,7 @@ nav{
 }
 
 .contact h3{
-    color: rgb(231, 101, 101);
+    color: #db3639;
     font-weight: 500;
     font-size: 1.4em;
     margin-bottom: 10px;
@@ -200,7 +198,7 @@ nav{
 }
 
 .inputBox span{
-    color: rgb(231, 101, 101);
+    color: #f35036;
     margin: 10px;
     margin-bottom: 5px;
     font-weight: 500;
@@ -221,7 +219,7 @@ nav{
     margin-bottom: 10px;
 }
 .inputBox input[type="submit"]{
-    background: #ff578b;
+    background: #db3639;
     color: #fff;
     border: none;
     font-size: 1.1em;
@@ -229,15 +227,16 @@ nav{
     font-weight: 500;
     cursor: pointer;
     padding: 14px 15px;
+    border-radius: 10px;
 }
 .inputBox ::placeholder{
     color: #999;
 }
 .info{
-    background: #8ce482;
+    background: #fff;
 }
 .info h3{
-    color: #ff578b;
+    color: #eb0951;
 }
 .info .infoBox div{
     display: flex;
@@ -247,8 +246,8 @@ nav{
 .info .infoBox div span{
     min-width: 40px;
     height: 40px;
-    color: rgb(231, 101, 101);
-    background: #b3f2ac;
+    color: #debaba;
+    background: rgb(141, 44, 44);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,11 +256,11 @@ nav{
     margin-right: 15px;
 }
 .info .infoBox div p{
-    color: rgb(158, 21, 218);
+    color: #3f3d3d;
     font-size: 1.1em;
 }
 .info .infoBox div a{
-    color: rgb(158, 21, 218);
+    color: #3f3d3d;
     text-decoration: none;
     font-size: 1.1em;
 }
@@ -274,11 +273,11 @@ nav{
     margin-right: 15px;
 }
 .sci li a{
-    color: rgb(231, 101, 101);
+    color: #d56464;
     font-size: 2em;
 }
 .sci li a:hover{
-    color: #fff;
+    color: #ef9293;
 }
 .map{
     padding: 0;
@@ -298,7 +297,7 @@ nav{
     margin-left: 42%;
     color: #0a4a67;
     width: 200px;
-    background-color: rgb(19, 150, 124);
+    background-color: #ef9293;
     border-radius: 5px;
     box-shadow: 0px 5px 55px rgba(0, 0, 0, 0.5);
 }
